@@ -47,6 +47,7 @@ namespace TAMKShooter
 
 		protected void Update()
 		{
+            /*
 			float horizontal = Input.GetAxis ( "Horizontal" );
 			float vertical = Input.GetAxis ( "Vertical" );
 
@@ -58,7 +59,7 @@ namespace TAMKShooter
 			if(shoot)
 			{
 				Weapons.Shoot ( ProjectileLayer );
-			}
+			}*/
 		}
 	}
 }

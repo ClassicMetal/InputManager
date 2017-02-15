@@ -7,7 +7,7 @@ namespace TAMKShooter
 {
 	public class PlayerUnits : MonoBehaviour
 	{
-		private Dictionary<PlayerData.PlayerId, PlayerUnit> _players =
+		public Dictionary<PlayerData.PlayerId, PlayerUnit> _players =
 			new Dictionary<PlayerData.PlayerId, PlayerUnit> ();
 
 		public void Init(params PlayerData[] players)
@@ -29,6 +29,8 @@ namespace TAMKShooter
 
 					// Add player to dictionary
 					_players.Add ( playerData.Id, unit );
+
+                    GetComponentInParent<Transform>().GetComponentInChildren<InputManager>( true).gameObject.SetActive(true);
 				}
 				else
 				{
@@ -39,7 +41,7 @@ namespace TAMKShooter
 		}
 
 		// Update player movement
-
+       
 
 	}
 }

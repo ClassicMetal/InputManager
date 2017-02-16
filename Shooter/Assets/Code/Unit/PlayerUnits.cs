@@ -29,8 +29,6 @@ namespace TAMKShooter
 
 					// Add player to dictionary
 					_players.Add ( playerData.Id, unit );
-
-                    GetComponentInParent<Transform>().GetComponentInChildren<InputManager>( true).gameObject.SetActive(true);
 				}
 				else
 				{
